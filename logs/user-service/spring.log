@@ -1,0 +1,166 @@
+15:47:06:648  INFO 20868 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.26 on DESKTOP-QAUI181 with PID 20868 (E:\java_study\hmall\user-service\target\classes started by Administrator in E:\java_study\hmall)
+15:47:06:652 DEBUG 20868 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:47:06:653  INFO 20868 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+15:47:08:118  INFO 20868 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f667dd47-e9d9-352b-8794-24275cbb853a
+15:47:08:500  INFO 20868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+15:47:08:501  INFO 20868 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+15:47:08:501  INFO 20868 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:47:08:502  INFO 20868 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:47:08:505  INFO 20868 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+15:47:08:513  INFO 20868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:47:08:514  INFO 20868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:47:08:611  INFO 20868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:47:08:611  INFO 20868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1890 ms
+15:47:09:312  WARN 20868 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTool' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\utils\JwtTool.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keyPair' defined in class path resource [com/hmall/user/config/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.security.KeyPair]: Factory method 'keyPair' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [hmall.jks]
+15:47:09:314  INFO 20868 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+15:47:09:326  INFO 20868 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:47:09:348 ERROR 20868 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTool' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\utils\JwtTool.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keyPair' defined in class path resource [com/hmall/user/config/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.security.KeyPair]: Factory method 'keyPair' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [hmall.jks]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.user.UserApplication.main(UserApplication.java:15) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTool' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\utils\JwtTool.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keyPair' defined in class path resource [com/hmall/user/config/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.security.KeyPair]: Factory method 'keyPair' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [hmall.jks]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTool' defined in file [E:\java_study\hmall\user-service\target\classes\com\hmall\user\utils\JwtTool.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keyPair' defined in class path resource [com/hmall/user/config/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.security.KeyPair]: Factory method 'keyPair' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [hmall.jks]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keyPair' defined in class path resource [com/hmall/user/config/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.security.KeyPair]: Factory method 'keyPair' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [hmall.jks]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.security.KeyPair]: Factory method 'keyPair' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [hmall.jks]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 61 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load keys from store: class path resource [hmall.jks]
+	at org.springframework.security.rsa.crypto.KeyStoreKeyFactory.getKeyPair(KeyStoreKeyFactory.java:93) ~[spring-security-rsa-1.0.10.RELEASE.jar:na]
+	at com.hmall.user.config.SecurityConfig.keyPair(SecurityConfig.java:29) ~[classes/:na]
+	at com.hmall.user.config.SecurityConfig$$EnhancerBySpringCGLIB$$649bd1f7.CGLIB$keyPair$0(<generated>) ~[classes/:na]
+	at com.hmall.user.config.SecurityConfig$$EnhancerBySpringCGLIB$$649bd1f7$$FastClassBySpringCGLIB$$5c9a1b94.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.27.jar:5.3.27]
+	at com.hmall.user.config.SecurityConfig$$EnhancerBySpringCGLIB$$649bd1f7.keyPair(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 62 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [hmall.jks] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:199) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.security.rsa.crypto.KeyStoreKeyFactory.getKeyPair(KeyStoreKeyFactory.java:68) ~[spring-security-rsa-1.0.10.RELEASE.jar:na]
+	... 73 common frames omitted
+
+15:49:49:308  INFO 20960 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.26 on DESKTOP-QAUI181 with PID 20960 (E:\java_study\hmall\user-service\target\classes started by Administrator in E:\java_study\hmall)
+15:49:49:310 DEBUG 20960 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:49:49:311  INFO 20960 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+15:49:50:065  INFO 20960 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f667dd47-e9d9-352b-8794-24275cbb853a
+15:49:50:311  INFO 20960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+15:49:50:312  INFO 20960 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+15:49:50:312  INFO 20960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:49:50:312  INFO 20960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:49:50:316  INFO 20960 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+15:49:50:322  INFO 20960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:49:50:322  INFO 20960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:49:50:433  INFO 20960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:49:50:434  INFO 20960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1089 ms
+15:49:52:052  INFO 20960 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:49:52:508  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of ca0bbf35-ab8e-49ea-b6df-f057423271e3
+15:49:52:545  INFO 20960 --- [main] org.reflections.Reflections              : Reflections took 21 ms to scan 1 urls, producing 3 keys and 6 values 
+15:49:52:566  INFO 20960 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 4 keys and 9 values 
+15:49:52:578  INFO 20960 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 3 keys and 10 values 
+15:49:52:580  WARN 20960 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:49:52:589  INFO 20960 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 1 keys and 5 values 
+15:49:52:599  INFO 20960 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 1 keys and 7 values 
+15:49:52:610  INFO 20960 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
+15:49:52:611  WARN 20960 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:49:52:612  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] RpcClient init label, labels = {module=naming, source=sdk}
+15:49:52:614  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:49:52:614  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:49:52:615  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:49:52:616  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Try to connect to server on start up, server: {serverIp = '192.168.231.141', server main port = 8848}
+15:49:53:757  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Success to connect to server [192.168.231.141:8848] on start up, connectionId = 1740402392614_192.168.231.1_63185
+15:49:53:758  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:49:53:757  INFO 20960 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Notify connected event to listeners.
+15:49:53:759  INFO 20960 --- [main] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$953/0x0000000800714440
+15:49:53:798  INFO 20960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+15:49:53:806  INFO 20960 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.1.102:8084 register finished
+15:49:54:088  INFO 20960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:49:54:090  INFO 20960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:49:54:106  INFO 20960 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:49:54:189  INFO 20960 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 5.687 seconds (JVM running for 6.439)
+15:49:54:275  INFO 20960 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Receive server push request, request = NotifySubscriberRequest, requestId = 64
+15:49:54:278  INFO 20960 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [ca0bbf35-ab8e-49ea-b6df-f057423271e3] Ack server push request, request = NotifySubscriberRequest, requestId = 64
+15:49:58:407  INFO 20960 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:49:58:408  INFO 20960 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:49:58:409  INFO 20960 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+15:50:56:295  INFO 20960 --- [http-nio-8084-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:50:56:564  INFO 20960 --- [http-nio-8084-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:50:56:572 DEBUG 20960 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+15:50:56:595 DEBUG 20960 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectList    : ==> Parameters: jack(String)
+15:50:56:618 DEBUG 20960 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectList    : <==      Total: 1
+15:51:14:238 DEBUG 20960 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+15:51:14:238 DEBUG 20960 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: null
+15:51:14:242 DEBUG 20960 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0

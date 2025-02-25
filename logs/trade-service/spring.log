@@ -1,0 +1,149 @@
+16:33:42:629  INFO 21952 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.26 on DESKTOP-QAUI181 with PID 21952 (E:\java_study\hmall\trade-service\target\classes started by Administrator in E:\java_study\hmall)
+16:33:42:631 DEBUG 21952 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:33:42:631  INFO 21952 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+16:33:43:941  INFO 21952 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b2b454af-d1bb-3976-a462-6bc46452b265
+16:33:44:267  INFO 21952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+16:33:44:269  INFO 21952 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+16:33:44:269  INFO 21952 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:33:44:269  INFO 21952 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:33:44:273  INFO 21952 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:33:44:285  INFO 21952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:33:44:286  INFO 21952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:33:44:419  INFO 21952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:33:44:419  INFO 21952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1741 ms
+16:33:45:440  INFO 21952 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+16:33:45:504  INFO 21952 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+16:33:46:345  INFO 21952 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+16:33:46:901  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of b4a43844-562f-4f81-986c-5e81ef28bb18
+16:33:46:938  INFO 21952 --- [main] org.reflections.Reflections              : Reflections took 21 ms to scan 1 urls, producing 3 keys and 6 values 
+16:33:46:967  INFO 21952 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 4 keys and 9 values 
+16:33:46:982  INFO 21952 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 10 values 
+16:33:46:998  WARN 21952 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+16:33:47:027  INFO 21952 --- [main] org.reflections.Reflections              : Reflections took 20 ms to scan 1 urls, producing 1 keys and 5 values 
+16:33:47:038  INFO 21952 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 1 keys and 7 values 
+16:33:47:055  INFO 21952 --- [main] org.reflections.Reflections              : Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+16:33:47:058  WARN 21952 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+16:33:47:059  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] RpcClient init label, labels = {module=naming, source=sdk}
+16:33:47:061  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+16:33:47:061  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+16:33:47:062  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+16:33:47:063  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Try to connect to server on start up, server: {serverIp = '192.168.231.141', server main port = 8848}
+16:33:48:551  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Success to connect to server [192.168.231.141:8848] on start up, connectionId = 1740405246930_192.168.231.1_49486
+16:33:48:551  INFO 21952 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Notify connected event to listeners.
+16:33:48:552  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+16:33:48:553  INFO 21952 --- [main] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$972/0x0000000800737040
+16:33:48:612  INFO 21952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+16:33:48:620  INFO 21952 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.1.102:8085 register finished
+16:33:48:989  INFO 21952 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+16:33:48:993  INFO 21952 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+16:33:49:013  INFO 21952 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+16:33:49:114  INFO 21952 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Receive server push request, request = NotifySubscriberRequest, requestId = 65
+16:33:49:117  INFO 21952 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [b4a43844-562f-4f81-986c-5e81ef28bb18] Ack server push request, request = NotifySubscriberRequest, requestId = 65
+16:33:49:123  INFO 21952 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 7.649 seconds (JVM running for 9.523)
+16:33:56:550  INFO 21952 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:33:56:550  INFO 21952 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:33:56:551  INFO 21952 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16:34:19:609  INFO 21952 --- [http-nio-8085-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:34:19:820  INFO 21952 --- [http-nio-8085-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:34:19:826 DEBUG 21952 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+16:34:19:842 DEBUG 21952 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1654779387523936258(Long)
+16:34:19:860 DEBUG 21952 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+16:56:05:371  INFO 22788 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.26 on DESKTOP-QAUI181 with PID 22788 (E:\java_study\hmall\pay-service\target\classes started by Administrator in E:\java_study\hmall)
+16:56:05:373 DEBUG 22788 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:56:05:374  INFO 22788 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
+16:56:06:228  INFO 22788 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+16:56:06:484  INFO 22788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+16:56:06:484  INFO 22788 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+16:56:06:485  INFO 22788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:56:06:485  INFO 22788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:56:06:488  INFO 22788 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:56:06:495  INFO 22788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:56:06:496  INFO 22788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:56:06:589  INFO 22788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:56:06:589  INFO 22788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1179 ms
+16:56:06:638  WARN 22788 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [E:\java_study\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [E:\java_study\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+16:56:06:640  INFO 22788 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+16:56:06:654  INFO 22788 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:56:06:664 ERROR 22788 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+16:58:33:940  INFO 22524 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.26 on DESKTOP-QAUI181 with PID 22524 (E:\java_study\hmall\pay-service\target\classes started by Administrator in E:\java_study\hmall)
+16:58:33:942 DEBUG 22524 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:58:33:943  INFO 22524 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
+16:58:34:683  INFO 22524 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+16:58:34:930  INFO 22524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+16:58:34:931  INFO 22524 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+16:58:34:931  INFO 22524 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:58:34:931  INFO 22524 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:58:34:935  INFO 22524 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:58:34:942  INFO 22524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:58:34:942  INFO 22524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:58:35:056  INFO 22524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:58:35:056  INFO 22524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1079 ms
+16:58:35:103  WARN 22524 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [E:\java_study\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [E:\java_study\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+16:58:35:105  INFO 22524 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+16:58:35:117  INFO 22524 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:58:35:128 ERROR 22524 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+16:59:39:383  INFO 10084 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.26 on DESKTOP-QAUI181 with PID 10084 (E:\java_study\hmall\pay-service\target\classes started by Administrator in E:\java_study\hmall)
+16:59:39:386 DEBUG 10084 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:59:39:386  INFO 10084 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
+16:59:40:161  INFO 10084 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0a5b2e1-521e-3999-9ba8-791ff3db2e40
+16:59:40:397  INFO 10084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+16:59:40:398  INFO 10084 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+16:59:40:399  INFO 10084 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:59:40:399  INFO 10084 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:59:40:402  INFO 10084 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:59:40:408  INFO 10084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:59:40:408  INFO 10084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:59:40:498  INFO 10084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:59:40:498  INFO 10084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1080 ms
+16:59:40:547  WARN 10084 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [E:\java_study\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [E:\java_study\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+16:59:40:549  INFO 10084 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+16:59:40:562  INFO 10084 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:59:40:572 ERROR 10084 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
