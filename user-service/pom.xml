@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>cart-service</artifactId>
+    <artifactId>user-service</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -38,6 +38,7 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
+        <!--nacos 服务注册发现-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
@@ -47,12 +48,6 @@
             <groupId>com.heima</groupId>
             <artifactId>hm-api</artifactId>
             <version>1.0.0</version>
-        </dependency>
-
-        <!--OK http 的依赖 -->
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-okhttp</artifactId>
         </dependency>
     </dependencies>
     <build>

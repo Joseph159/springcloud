@@ -31,7 +31,7 @@ knife4j:
   enable: true
   openapi:
     title: 黑马商城购物车管理接口文档
-    description: "黑马商城接口文档"
+    description: "黑马商城购物车接口文档"
     email: zhanghuyi@itcast.cn
     concat: 虎哥
     url: https://www.itcast.cn
@@ -42,3 +42,6 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.hmall.cart.controller
+feign:
+  okhttp:
+    enabled: true
