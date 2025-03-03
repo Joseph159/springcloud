@@ -20,5 +20,6 @@ public class CartApplication {
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
+        
     }
 }
