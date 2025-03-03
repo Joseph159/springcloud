@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: pay-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.231.141:8848
+      config:
+        file-extension: yaml # 文件后缀名
+        shared-configs: # 共享配置
+          - data-id: shared-jdbc.yaml # 共享mybatis配置
+          - data-id: shared-log.yaml # 共享日志配置
+          - data-id: shared-swagger.yaml # 共享日志配置
+          - data-id: shared-seata.yaml # 共享分布式事务管理
+          - data-id: shared-rabbit.yaml # 共享消息队列配置
+
